@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests">
+    <listeners>
+        <listener class-name="Utilities.ListenerClass"></listener>
+    </listeners>
+    <test thread-count="6" name="Test_All">
+        <parameter name="browser" value="Chrome"></parameter>
+        <classes>
+            <!-- This is another comment within methods-->
+            <class name="TestCases.LoginTest"></class>
+            <class name="TestCases.InventoryTest"></class>
+            <class name="TestCases.CartTest"></class>
+            <class name="TestCases.CheckoutTest"></class>
+            <class name="TestCases.CheckOutReviewTest"></class>
+            <class name="TestCases.LogoutTest"></class>
+        </classes>
+    </test>
+</suite>
